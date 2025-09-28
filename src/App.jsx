@@ -9,31 +9,31 @@ export default function App() {
         name: 'Masala Dosa',
         description: 'Crispy rice and lentil crepe with spiced potato filling, served with sambhar and chutneys',
         price: 180,
-        image: "../src/assets/masaladose.png"
+        image: "images/masaladose.png"
       },
       {
         name: 'Idli Sambhar',
         description: 'Steamed rice cakes served with lentil curry and coconut chutney (4 pieces)',
         price: 120,
-        image: "../src/assets/idle.png"
+        image: "images/idle.png"
       },
       {
         name: 'Vada Sambhar',
         description: 'Crispy lentil donuts served with sambhar and chutneys (3 pieces)',
         price: 140,
-        image: "../src/assets/vada.png"
+        image: "images/vada.png"
       },
       {
         name: 'Uttapam',
         description: 'Thick pancake topped with onions, tomatoes, and coriander',
         price: 160,
-        image: "../src/assets/uttapam.png"
+        image: "images/uttapam.png"
       },
       {
         name: 'Rava Kesari',
         description: 'Traditional semolina sweet garnished with cashews and raisins',
         price: 80,
-        image: "../src/assets/Ravakesri.png"
+        image: "images/Ravakesri.png"
       }
     ],
     'Rice & Curries': [
@@ -41,25 +41,25 @@ export default function App() {
         name: 'Hyderabadi Biryani',
         description: 'Aromatic basmati rice with tender mutton, served with raita and shorba',
         price: 380,
-        image: "../src/assets/biryani.png"
+        image: "images/biryani.png"
       },
       {
         name: 'Chicken Chettinad',
         description: 'Spicy South Indian chicken curry with coconut and traditional spices',
         price: 320,
-        image: "../src/assets/chicken.png"
+        image: "images/chicken.png"
       },
       {
         name: 'Fish Curry',
         description: 'Kerala style fish curry with coconut milk and curry leaves',
         price: 280,
-        image: "../src/assets/fish.png"
+        image: "images/fish.png"
       },
       {
         name: 'Dal Tadka',
         description: 'Yellow lentils tempered with cumin, garlic, and spices',
         price: 180,
-        image:"../src/assets/dal.png"
+        image:"images/dal.png"
       }
     ],
     'Continental': [
@@ -67,19 +67,19 @@ export default function App() {
         name: 'Margherita Pizza',
         description: 'Fresh basil, mozzarella, and tomato sauce on thin crust',
         price: 420,
-        image: '../src/assets/margerita.jpeg'
+        image: 'images/margerita.jpeg'
       },
       {
         name: 'Farmhouse Pizza',
         description: 'Creamy pasta with grilled chicken breast and parmesan',
         price: 380,
-        image: '../src/assets/farmhouse.jpeg'
+        image: 'images/farmhouse.jpeg'
       },
       {
         name: 'Panner Pizza',
         description: 'Grilled chicken with lettuce, tomato, and mayo, served with fries',
         price: 280,
-        image: '../src/assets/paneer.jpeg'
+        image: 'images/paneer.jpeg'
       }
     ],
     'Ice creams': [
@@ -87,19 +87,19 @@ export default function App() {
         name: 'Falooda',
         description: 'Soft milk dumplings in sugar syrup (3 pieces)',
         price: 120,
-        image: '../src/assets/falooda.jpg'
+        image: 'images/falooda.jpg'
       },
       {
         name: 'Death By Chocolate',
         description: 'Rich chocolate brownie with vanilla ice cream',
         price: 180,
-        image: '../src/assets/polar.jpeg'
+        image: 'images/polar.jpeg'
       },
       {
         name: 'GudBud',
         description: 'Traditional Indian ice cream with cardamom and pistachios',
         price: 100,
-        image: '../src/assets/gudbud.jpeg'
+        image: 'images/gudbud.jpeg'
       }
     ],
     'Cakes': [
@@ -107,19 +107,19 @@ export default function App() {
         name: 'Butterscotch',
         description: 'Soft milk dumplings in sugar syrup (3 pieces)',
         price: 120,
-        image: '../src/assets/butterscotch.jpg'
+        image: 'images/butterscotch.jpg'
       },
       {
         name: 'Fresh Fruit',
         description: 'Rich chocolate brownie with vanilla ice cream',
         price: 180,
-        image: '../src/assets/fresh-fruit-cake.png'
+        image: 'images/fresh-fruit-cake.png'
       },
       {
         name: 'Oreo',
         description: 'Traditional Indian ice cream with cardamom and pistachios',
         price: 100,
-        image: '../src/assets/oreo.jpeg'
+        image: 'images/oreo.jpeg'
       }
     ]
   }
