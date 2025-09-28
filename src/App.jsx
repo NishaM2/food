@@ -320,7 +320,7 @@ export default function App() {
             </div>
 
     
-            <div className="lg:col-span-1">
+            <div className="2xl:col-span-1">
               <div className="sticky top-24">
                 <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-xl p-8">
                   <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Your Order</h2>
@@ -364,10 +364,15 @@ export default function App() {
                     )}
                   </div>
 
-                  <div className="pt-6 border-t-2 border-gray-200">
-                    <div className="bg-gradient-to-r from-pink-100 to-pink-200 p-4 rounded-2xl text-center">
-                      <div className="text-2xl font-bold text-gray-800">
+                  <div className="pt-5 border-t-2 border-gray-200 flex justify-center items-center gap-2 ">
+                    <div className="bg-gradient-to-r from-pink-100 to-pink-200 p-4 rounded-2xl text-center w-30">
+                      <div className="text-xl font-bold text-gray-800">
                         Total: ₹{calculateTotal()}
+                      </div>
+                    </div>
+                    <div className="bg-gradient-to-r from-pink-100 to-pink-200 p-4 rounded-2xl text-center">
+                      <div className="text-xl font-bold text-gray-800">
+                        Place order
                       </div>
                     </div>
                   </div>
