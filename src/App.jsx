@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 export default function App() {
   const [tableOrders, setTableOrders] = useState({});
   const [currentTable, setCurrentTable] = useState(null);
+  const [orderMessage, setOrderMessage] = useState("");
+
 
   const menuItems = {
     'South Indian Specials': [
@@ -211,6 +213,25 @@ export default function App() {
     }
   };
 
+  const handlePlaceOrder = () => {
+    if (!currentTable) return;
+
+    // Clear the current table's orders
+    setTableOrders((prev) => ({
+      ...prev,
+      [currentTable]: {}
+    }));
+
+    // Show success message
+    setOrderMessage("✅ Your order has been placed!");
+    
+    // Hide message after a few seconds
+    setTimeout(() => {
+      setOrderMessage("");
+    }, 3000);
+  };
+
+
   return (
     <div className="min-h-screen bg-gray-50">
     
@@ -329,6 +350,15 @@ export default function App() {
                     {currentTable ? `Table ${currentTable}` : 'Please select a table first'}
                   </div>
 
+                
+
+    {/* ✅ Success message */}
+    {orderMessage && (
+      <div className="text-center text-green-600 font-semibold mb-4">
+        {orderMessage}
+      </div>
+    )}
+
                   <div className="space-y-4 mb-6">
                     {currentTable && tableOrders[currentTable] && Object.keys(tableOrders[currentTable]).length > 0 ? (
                       Object.entries(tableOrders[currentTable]).map(([itemName, itemData]) => (
@@ -342,7 +372,7 @@ export default function App() {
                               onClick={() => updateQuantity(itemName, -1)}
                               className="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center font-bold transition-colors"
                             >
-                              −
+                              -
                             </button>
                             <span className="font-bold text-lg w-8 text-center">{itemData.quantity}</span>
                             <button 
@@ -370,12 +400,17 @@ export default function App() {
                         Total: ₹{calculateTotal()}
                       </div>
                     </div>
-                    <div className="bg-gradient-to-r from-pink-100 to-pink-200 p-4 rounded-2xl text-center">
-                      <div className="text-xl font-bold text-gray-800">
-                        Place order
-                      </div>
+                  <div 
+                    onClick={handlePlaceOrder}
+                    className="cursor-pointer bg-gradient-to-r from-pink-100 to-pink-200 p-4 rounded-2xl text-center"
+                  >
+                    <div className="text-xl font-bold text-gray-800">
+                      Place order
                     </div>
                   </div>
+
+                  </div>
+
                 </div>
               </div>
             </div>
